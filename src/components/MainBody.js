@@ -9,7 +9,7 @@ const MainBody = () => {
       
       <div className="description">
 
-        <h1> <span> Man-made features</span>
+        <h1> <span> Почему выбирают наш сервис?</span>
         </h1>
            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br>
              </br> Deleniti soluta dolores sunt debitis id.
