@@ -4,6 +4,7 @@ import ServicesSection from "../components/ServicesSection";
 import FaqSections from "../components/FaqSections"
   ;
 import MainBody from "../components/MainBody"
+import FooterMain from "../components/FooterMain";
 const Home = () => {
 
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <MainBody/>
       <ServicesSection />
       <FaqSections />
+      <FooterMain/>
       
     </>
   );

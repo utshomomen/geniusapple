@@ -4,23 +4,29 @@ import reactangle from '../img/Rectangle.svg';
 // import services from '../img/service.svg';
 import home2 from '../img/17.png';
 
+//styles
+import { About, Description, Image } from "../styles";
+import styled from 'styled-components';
+
+
+
 const ServicesSection = () => {
   
   return (
 
-    <div className="services">
+    <Services>
 
-      <div className="description">
+      <Description>
 
         <h2> <span> От заявки до ремонта Три простых шага</span>
       </h2>
-      <div className="cards">
+      <Cards>
         <div className="card">
 
           <div className="icon">
             <img alt="icon" src={reactangle} />
 
-            <h3>1.	Заявка или звонок
+            <h3>Заявка или звонок
             </h3>
 
           </div>
@@ -32,7 +38,7 @@ const ServicesSection = () => {
           <div className="icon">
             <img alt="icon" src={reactangle} />
 
-            <h3> 2.	Расчет стоимости </h3>
+            <h3>Расчет стоимости </h3>
 
           </div>
           <p>Скажем точную сумму ремонта, уточним контактные данные и удобное для вас время.</p>
@@ -43,18 +49,18 @@ const ServicesSection = () => {
           <div className="icon">
             <img alt="icon" src={reactangle} />
 
-            <h3> 3.	Ремонт </h3>
+            <h3>Ремонт </h3>
 
           </div>
           <p>Ремонтируем устройства в кратчайшие сроки и даем гарантию 6 месяцев</p>
         </div>
-      </div>
-      </div>
-      <div className="image">
+      </Cards>
+      </Description>
+      <Image>
 
         <img alt="service" src={home2} />
-      </div>
-    </div>
+      </Image>
+    </Services>
 
 
 );
@@ -66,5 +72,33 @@ const ServicesSection = () => {
 };
 
 
+const Services = styled(About)`
+/* min-height: 90vh ;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 5rem 10rem;
+color: #fff; */
+
+h2 {
+  padding-bottom: 5rem;
+
+}
+p {
+  width: 70%;
+  padding: 2rem 0rem 4rem 0rem;
+}
+
+
+
+`;
+
+const Cards = styled.div`
+display: flex;
+flex-wrap: wrap;
+
+
+
+`;
 
 export default ServicesSection;
